@@ -1,3 +1,3 @@
 # README
 # Description
-「コンビニスイーツ在庫調査班」というLINEBOTプロダクトのバックエンド、LIFFのリポジトリです。
+TwogateDevCamp2024で作った「コンビニスイーツ在庫調査班」というLINEBOTプロダクトのバックエンド、LIFFのリポジトリです。
