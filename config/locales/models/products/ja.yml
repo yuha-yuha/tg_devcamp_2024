@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      products: 商品
+    attributes:
+      product:
+        name: 商品名
+        content: 在庫口コミ
+

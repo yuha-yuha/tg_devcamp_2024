@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    models:
+      post: 投稿
+    attributes:
+      post:
+        convenience_store_type: コンビニブランド名
+        store_name: 店舗名
+  enumrize:
+    post:
+      convenience_store_type:
+        familly_mart: "ファミリーマート" #?????
+        seven_eleven: "セブンイレブン"

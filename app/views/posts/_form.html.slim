@@ -1,0 +1,32 @@
+/ - if flash[:success].presence
+/   .uk-alert-success uk-alert=""
+/     = flash[:success]
+
+/ - if flash[:danger].presence
+/   .uk-alert-danger uk-alert=""
+/     = flash[:danger]
+
+/ - if post.errors.presence
+/   .uk-alert-danger uk-alert=""
+/     strong 入力に誤りがあります
+/     ul.uk-list.uk-list-bullet
+/       - post.errors.full_messages.each do |message|
+/         li
+/           = message
+          
+    
+
+
+= form_with(model: post, url: posts_path, local: true) do |f|
+    = f.label :convenience_store_type
+    = f.select :convenience_store_type, Post.convenience_store_type.options, {}, :class => "uk-input"
+
+    = f.label :store_name
+    = f.text_field :store_name, :class => "uk-input"
+
+    = f.fields_for :products do |product_form|
+        = render 'product_fields', :f => product_form
+    .links.uk-margin-bottom
+        = link_to_add_association '追加', f, :products, class: "uk-button uk-button-secondary uk-button-small"
+        
+    = f.submit '投稿', class: "uk-button uk-button-primary"

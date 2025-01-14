@@ -1,0 +1,8 @@
+.nested-fields.uk-margin
+    .field.uk-flex.uk-flex-column
+        = f.label :name
+        = f.text_field :name
+
+        = f.label :content
+        = f.text_area :content
+    = link_to_remove_association "削除", f, class: "uk-button uk-button-secondary uk-button-small uk-margin-small-top"

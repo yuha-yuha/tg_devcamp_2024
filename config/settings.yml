@@ -1,0 +1,6 @@
+line_bot:
+  channel_id: <%= ENV["LINE_CHANNEL_ID"] %>
+  channel_secret: <%= ENV["LINE_CHANNEL_SECRET"] %>
+  channel_token: <%= ENV["LINE_CHANNEL_TOKEN"] %>
+  liff_id: <%= ENV["LIFF_ID"] %>
+  liff_channel_id: <%= ENV["LIFF_CHANNEL_ID"] %>
